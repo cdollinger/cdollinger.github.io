@@ -7,10 +7,10 @@
     <body>
          <!--[IF IE]> <p>Wenn du IE benutzt hast du die Kontrolle über dein Leben verloren </p> <![ENDIF]-->
         <div class= "con-twelve-col">
-            <div class ="header"><img src="img/HeaderWedding.PNG"></div>
+            <div class ="header"></div>
             <div id="menue">
                 <ul>
-                    <li> <a href ="#">Der Hochzeitstag</a></li>
+                    <li> <a href ="#">Hochzeitstag</a></li>
                     <li> <a href ="#">Wir & Co.</a></li>
                     <li> <a href ="#">Ankommen & bleiben</a></li>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -27,11 +27,11 @@
 
             console.log($(window).scrollTop());
 
-            if ($(window).scrollTop() > 300) {
+            if ($(window).scrollTop() > 160) {
                 $('#menue').addClass('menue-fixed');
             }
 
-            if ($(window).scrollTop() < 301) {
+            if ($(window).scrollTop() < 161) {
                 $('#menue').removeClass('menue-fixed');
             }
         });

@@ -7,26 +7,39 @@
     <body>
          <!--[IF IE]> <p>Wenn du IE benutzt hast du die Kontrolle über dein Leben verloren </p> <![ENDIF]-->
         <div class= "con-twelve-col">
-            <div class ="header"><img src="img/HeaderWedding.PNG"></div>
+            <div class ="header"></div>
             <div id="menue">
                 <ul>
-                    <li> <a href ="#">Der Hochzeitstag</a></li>
+                    <li> <a href ="#">Hochzeitstag</a></li>
                     <li> <a href ="#">Wir & Co.</a></li>
                     <li> <a href ="#">Ankommen & bleiben</a></li>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                 </ul>
             </div>
             <div class="spacebetween">
-                <h2>Wir</h2>
+                <h3>Wir</h3>
             </div>
             <div class = "content-one-of-two">
-                <h4>Christina</h4>
+                <!-- <div class="title-style"> -->
+                    <!-- <p>Christina</p> -->
+                <!-- </div> -->
+                <div class="inner">
+                    <p>Christina liebt Christian. Seit sie ihn kennt fühlt sie sich mehr wie sie selbst. Bla bub blfdufh bludf bldfu bufff</p>
+                </div>
+                <div style="text-align: right;">
+                        <img class="con-img"src="img/Christina.jpg">
+                </div>
             </div>   
             <div class="content-two-of-two">
-                <h4>Christina</h4>
+                <div style="text-align: left;">
+                        <img class="con-img"src="img/Christian.jpg">
+                </div>
+                <div class= "inner">
+                    <p style="padding-left: 10px;">Christian liebt Christina. Blablablablab blllab lablabl balb alb alb alb alb la blab lab lab al blalbbalb blablabla.</p>
+                </div>
             </div>
             <div class="spacebetween">
-                    <h2>Co.</h2>
+                    <h3>Co.</h3>
                 </div>
             <div class = "footer">Footer</div>
         </div>
@@ -37,11 +50,11 @@
 
             console.log($(window).scrollTop());
 
-            if ($(window).scrollTop() > 300) {
+            if ($(window).scrollTop() > 160) {
                 $('#menue').addClass('menue-fixed');
             }
 
-            if ($(window).scrollTop() < 301) {
+            if ($(window).scrollTop() < 161) {
                 $('#menue').removeClass('menue-fixed');
             }
         });
