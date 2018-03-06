@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "css/basic-christina.css">
+        <link rel = "stylesheet" href = "css/layout-christina.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+         <!--[IF IE]> <p>Wenn du IE benutzt hast du die Kontrolle über dein Leben verloren </p> <![ENDIF]-->
+        <div class= "con-twelve-col">
+            <div class ="header"></div>
+            <div id="menue">
+                <ul>
+                    <li> <a href ="#">Hochzeitstag</a></li>
+                    <li> <a href ="#">Wir & Co.</a></li>
+                    <li> <a href ="#">Ankommen & bleiben</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </ul>
+            </div>
+            <div class="spacebetween">Ankommen</div>
+            <div class = "content-one-of-two">
+                    <div style="margin-left: auto; margin-right: 5px;">
+                        <p>Wo wird sich getraut und gefeiert?</p>
+                        <p>...</p>
+                    </div>
+            </div>   
+            <div class="content-two-of-two">
+                <div class="map">Anfahrtsskizze</div>
+            </div>   
+            <div class = "footer">Footer</div>
+        </div>
+
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function () { 
+
+            console.log($(window).scrollTop());
+
+            if ($(window).scrollTop() > 160) {
+                $('#menue').addClass('menue-fixed');
+            }
+
+            if ($(window).scrollTop() < 161) {
+                $('#menue').removeClass('menue-fixed');
+            }
+        });
+    });
+
+    function myFunction() {
+    var x = document.getElementById("menue");
+    if (x.id === "menue") {
+        x.id += " responsive";
+    } else {
+        x.id = "menue";
+    }
+}
+</script>
+    </body>
+</html>

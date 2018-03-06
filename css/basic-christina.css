@@ -15,6 +15,10 @@ p {
   color: rgb(103, 146,127);
 }
 
+b {
+  font-size: 27px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

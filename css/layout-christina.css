@@ -4,7 +4,7 @@
     margin-right: 25px;
     grid-gap: 6px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 190px; 
+    grid-template-rows: 250px; 
 } 
 
 .con-three-col {
@@ -16,21 +16,15 @@
     align-items: center;
     font-size: 2em;
     color: 	rgb(248, 248, 248);
+    background-color: rgb(253, 233, 235);
   }
-
-.spacebetween {
-    justify-content: center;
-    grid-column: 1 / -1;
-    height: 38px;
-    background-color: lightblue;
-}
 
 .header {
     justify-content: center;
     grid-column: 1 / -1;
     width: 100%;
-    overflow:hidden;
-    background-color: paleturquoise;
+    overflow: hidden;
+    background-color: rgb(253, 233, 235);
 }
 
 #menue {
@@ -57,10 +51,18 @@
     display: none;
 }
 
+.space {
+    justify-content: center;
+    grid-column: 1 / -1;
+    height: 38px;
+    background-color: lightblue;
+}
+
 .content {
     grid-column: 1 / -1;
     padding: 10px;
     background-color: lightblue;
+    justify-content: center;
 }
 
 .content-one-of-two {
@@ -75,27 +77,81 @@
     background-color: lightblue;
 }
 
-.inner {
+.inner-align-left {
     display: inline-flex;
     min-height: 100px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 18;
+    text-align: left;
 }
 
-.title-style {
-    vertical-align: top;
+.inner-align-center {
+    display: inline-flex;
+    min-height: 100px;
+    padding: 18;
+    text-align: center;
+}
+
+.inner-align-right {
+    display: inline-flex;
+    min-height: 100px;
+    padding: 18;
+    text-align: right;
+}
+
+.group-title {
+    justify-content: center;
+    grid-column: 1 / -1;
+    height: 38px;
+    background-color: lightblue;
+}
+
+.time-wed {
+    background-color: darkgrey;
+    height: 320px;
+    width: 150px;
+    text-align: center;
+}
+
+.time-wed-horizontal {
+    background-color: darkgrey;
+    height: 150;
+    width: 400;
+    text-align: center;
+}
+
+.inner-header {
+    background-color: darkgrey;
+    height: 150;
+    width: 700;
+    text-align: center;
+}
+
+.map {
+    background-color: darkgrey;
+    height: 250;
+    width: 400;
+    text-align: center;
 }
 
 .footer {
     justify-content: center;
     grid-column: 1 / -1;
     max-height: 80px;
-    background-color: rgb(216, 74, 128); 
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(253, 233, 235);
 }
 
 .con-img {
     height: auto;
     width: auto;
-    max-height: 250px;;
-    max-width: 200px;;
+    max-height: 250px;
+    max-width: 200px;
+}
+
+.con-img-l {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    max-width: 500px;
 }
