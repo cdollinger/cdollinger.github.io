@@ -12,28 +12,21 @@ h1, h2, h3, h4, h5 {
   color: rgb(103, 146,127);
 }
 
-h2 {
-  font-weight: 150;
-  font-size: 45;
-  font-variant: small-caps;
-}
-
 p {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 15px;
   font-weight: 200;
   line-height: 1.8;
-  margin: 0;
-  padding: 0;
   word-wrap: break-word;
   color: rgb(103, 146,127);
   /* color: #444; */
 }
 
 b {
+  font-family: 'Shadows Into Light', Arial, cursive;
   font-size: 27px;
   font-weight: 600;
-  font-family: 'Shadows Into Light', Arial, cursive;
+  letter-spacing: 1.2;
 }
 
 ul {

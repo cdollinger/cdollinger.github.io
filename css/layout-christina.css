@@ -3,7 +3,6 @@
     margin-left: 25px;
     margin-right: 25px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 250px;
     background-color: #fff;
 } 
 
@@ -17,9 +16,10 @@
     font-size: 25px;
     color: 	rgb(248, 248, 248);
     /*background-color: rgb(253, 233, 235);*/
-  }
+}
 
 .header {
+    height: 250px;
     justify-content: center;
     grid-column: 1 / -1;
     width: 100%;
@@ -51,10 +51,6 @@
     align-content: center;
 }
 
-li{
-    margin-left:30px;
-    margin-right:30px;
-  }
 
 .icon {
     display: none;
@@ -64,10 +60,6 @@ li{
     justify-content: center;
     grid-column: 1 / -1;
     height: 38px;
-}
-
-.group-title h2 {
-    padding-bottom: 20;
 }
 
 .content {
@@ -110,7 +102,16 @@ li{
 .group-title {
     justify-content: center;
     grid-column: 1 / -1;
-    height: 38px;
+}
+
+.group-title h2 {
+    font-weight: 150;
+    font-size: 45;  
+}
+
+.group-title h4 {
+    font-weight: 200;
+    font-size: 30;
 }
 
 .time-wed {
