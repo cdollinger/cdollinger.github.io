@@ -2,9 +2,9 @@
     display: grid;
     margin-left: 25px;
     margin-right: 25px;
-    grid-gap: 6px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 250px; 
+    grid-template-rows: 250px;
+    background-color: #fff;
 } 
 
 .con-three-col {
@@ -14,9 +14,9 @@
 .con-twelve-col > div {
     display: flex;
     align-items: center;
-    font-size: 2em;
+    font-size: 25px;
     color: 	rgb(248, 248, 248);
-    background-color: rgb(253, 233, 235);
+    /*background-color: rgb(253, 233, 235);*/
   }
 
 .header {
@@ -24,17 +24,21 @@
     grid-column: 1 / -1;
     width: 100%;
     overflow: hidden;
-    background-color: rgb(253, 233, 235);
+    background-color: rgb(127, 179, 155); 
+}
+
+.img-header {
+    min-width: 1291px;
+    border: 1.5px solid #d6dde0;
 }
 
 #menue {
     justify-content: center;
     grid-column: 1 / -1;
     border: 0;
-    height: 50px;
-	background-color: rgb(253, 233, 235); /* R: 248 G: 168 B: 141*/
-	border-radius: 0px;
-	margin-bottom: 0;
+    padding-bottom: 12;
+    padding-top: 8;
+    background-color: rgb(127, 179, 155); /* R: 248 G: 168 B: 141*/
 }
 
 .menue-fixed {
@@ -47,6 +51,11 @@
     align-content: center;
 }
 
+li{
+    margin-left:30px;
+    margin-right:30px;
+  }
+
 .icon {
     display: none;
 }
@@ -55,26 +64,26 @@
     justify-content: center;
     grid-column: 1 / -1;
     height: 38px;
-    background-color: lightblue;
+}
+
+.group-title h2 {
+    padding-bottom: 20;
 }
 
 .content {
     grid-column: 1 / -1;
     padding: 10px;
-    background-color: lightblue;
     justify-content: center;
 }
 
 .content-one-of-two {
     grid-column: 1 / 7;
     padding: 10px;
-    background-color: lightblue;
 }
 
 .content-two-of-two{
     grid-column: 7 / -1;
     padding: 10px;
-    background-color: lightblue;
 }
 
 .inner-align-left {
@@ -102,7 +111,6 @@
     justify-content: center;
     grid-column: 1 / -1;
     height: 38px;
-    background-color: lightblue;
 }
 
 .time-wed {
@@ -139,7 +147,6 @@
     max-height: 80px;
     justify-content: center;
     text-align: center;
-    background-color: rgb(253, 233, 235);
 }
 
 .con-img {

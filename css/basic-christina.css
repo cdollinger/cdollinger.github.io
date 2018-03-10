@@ -1,22 +1,39 @@
 
 
 html, body {
-  background-color:rgb(248, 248, 248);
+  background-color: rgb(127, 179, 155); /* grau-weiss: rgb(248, 248, 248); gruen: rgb(103, 146,127); */
   margin: 10px;
 }
 
 h1, h2, h3, h4, h5 {
   display: block;
+  /* font-family: 'Shadows Into Light', Arial, cursive; */
+  font-family: 'Times New Roman', Times, serif;
   color: rgb(103, 146,127);
 }
 
+h2 {
+  font-weight: 150;
+  font-size: 45;
+  font-variant: small-caps;
+}
+
 p {
-  font-size: 20px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
   color: rgb(103, 146,127);
+  /* color: #444; */
 }
 
 b {
   font-size: 27px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', Arial, cursive;
 }
 
 ul {
@@ -32,11 +49,14 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(103, 146,127);
+  font-size: 32;
+  font-variant: small-caps;
+  color: rgb(248, 248, 248);
 }
 
 li a:hover {
-  color: peachpuff;
+  color: gold;
+  /*opacity: 0.7;*/
 }
 
 
