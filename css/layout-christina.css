@@ -3,7 +3,9 @@
     margin-left: 25px;
     margin-right: 25px;
     grid-template-columns: repeat(12, 1fr);
-    background-color: #fff;
+    grid-template-rows: auto;
+    /* grid-row-gap: 20; */
+    /* background-color: #fff; */
 } 
 
 .con-three-col {
@@ -14,17 +16,16 @@
     display: flex;
     align-items: center;
     font-size: 25px;
-    color: 	rgb(248, 248, 248);
-    /*background-color: rgb(253, 233, 235);*/
+    padding-right: 30;
+    padding-left: 30;
+    background-color: #fff;
 }
 
 .header {
     height: 250px;
     justify-content: center;
     grid-column: 1 / -1;
-    width: 100%;
     overflow: hidden;
-    background-color: rgb(127, 179, 155); 
 }
 
 .img-header {
@@ -106,7 +107,8 @@
 
 .group-title h2 {
     font-weight: 150;
-    font-size: 45;  
+    font-size: 45;
+    margin-top: 45;  
 }
 
 .group-title h4 {
