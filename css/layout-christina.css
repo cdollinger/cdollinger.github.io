@@ -6,16 +6,9 @@
     background-color: #fff;
 } 
 
-.con-three-col {
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .con-twelve-col > div {
     display: flex;
     align-items: center;
-    font-size: 25px;
-    color: 	rgb(248, 248, 248);
-    /*background-color: rgb(253, 233, 235);*/
 }
 
 .header {
@@ -28,16 +21,15 @@
 }
 
 .img-header {
-    min-width: 1291px;
-    border: 1.5px solid #d6dde0;
+    max-width: 100%;
+    background-color: #fff;
 }
 
 #menue {
     justify-content: center;
     grid-column: 1 / -1;
     border: 0;
-    padding-bottom: 12;
-    padding-top: 8;
+    padding-bottom: 5;
     background-color: rgb(127, 179, 155); /* R: 248 G: 168 B: 141*/
 }
 
@@ -51,7 +43,6 @@
     align-content: center;
 }
 
-
 .icon {
     display: none;
 }
@@ -59,24 +50,49 @@
 .space {
     justify-content: center;
     grid-column: 1 / -1;
-    height: 38px;
+    margin: 30;
+    margin-left:200;
+    margin-right:200;
+    padding-bottom: 10;
+    border-bottom: 1.5px solid rgb(103, 146,127);
 }
 
+@media (max-width: 980px) {
+    .content-span-six {
+        grid-column: 1 /-1 !important; 
+
+    }    
+}
+
+.content-span-six {
+    grid-column: auto / span 6;
+    padding-left: 30;
+    padding-right: 30;
+}
 .content {
     grid-column: 1 / -1;
-    padding: 10px;
+    padding: 30 10 30 10;
     justify-content: center;
 }
 
-.content-one-of-two {
-    grid-column: 1 / 7;
-    padding: 10px;
+.span-four {
+    grid-column: auto /span 4;
+    padding-left: 30;
+    padding-right: 30;
 }
 
-.content-two-of-two{
-    grid-column: 7 / -1;
-    padding: 10px;
+.span-two {
+    grid-column: auto /span 2;
+    padding-left: 30;
+    padding-right: 30;
 }
+
+.from-3-span-two {
+    grid-column: 4 /span 2;
+    padding-left: 30;
+    padding-right: 30;
+}
+
 
 .inner-align-left {
     display: inline-flex;
@@ -88,7 +104,8 @@
 .inner-align-center {
     display: inline-flex;
     min-height: 100px;
-    padding: 18;
+    padding-left: 120;
+    padding-right: 120;
     text-align: center;
 }
 
@@ -148,11 +165,12 @@
     max-height: 80px;
     justify-content: center;
     text-align: center;
+    font-family: 'Shadows Into Light', Arial, cursive;
+    font-size: 27px;
+    letter-spacing: 1.2;
 }
 
 .con-img {
-    height: auto;
-    width: auto;
     max-height: 250px;
     max-width: 200px;
 }
@@ -163,3 +181,4 @@
     max-height: 400px;
     max-width: 500px;
 }
+

@@ -1,12 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <!DOCTYPE html> -->
+<html>
 
-    <title>Document</title>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="css/basic-christina.css">
+    <link rel="stylesheet" href="css/layout-christina.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
+
 <body>
-    
+    <!--[IF IE]> <p>Wenn du IE benutzt hast du die Kontrolle über dein Leben verloren </p> <![ENDIF]-->
+    <div class="con-twelve-col">
+        <div class="header">
+            <div>
+                <img class="img-header" src="img/Header.png">
+            </div>
+        </div>
+        <div id="menue">
+            <ul>
+                <li>
+                    <a href="hochzeitstag.html">hochzeitstag</a>
+                </li>
+                <li>
+                    <a href="wirUndCo.html">wir &amp co</a>
+                </li>
+                <li>
+                    <a href="ankommenUndBleiben.html">ankommen &amp bleiben</a>
+                </li>
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
+            </ul>
+        </div>
+        <div class="content">
+        </div>
+        <div class="group-title">
+            <h2>Tagesablauf</h2>
+        </div>
+        <div class="content">
+        </div>
+        <div class="content">
+            <img class="img-header" src="img/Tagesablauf_Homepage.png">
+        </div>
+        <div class="group-title">
+            <h4 style="margin-bottom:0;">Der nächste Morgen</h4>
+        </div>
+        <div class="content">
+            <div class="inner-align-center">
+                <p>Sagt uns Bescheid ob ihr am nächsten Morgen um 10 Uhr beim Brunch in der Sängerstube in Schloss Thurn dabei
+                    seid.
+                </p>
+            </div>
+        </div>
+        <div class="group-title">
+            <h4 style="margin-bottom:0;">Was anziehen?</h4>
+        </div>
+        <div class="content">
+            <div class="inner-align-center">
+                <p>Kleidet euch festlich-fröhlich für eine Trauung und im Anschluss Kaffee und Kuchen im Freien. Tragt Schuhe
+                    mit denen ihr auch auf Gras bequem laufen könnt. Zur anschließenden Party im Romantiksaal könnt ihr euch
+                    andere Schuhe mit mitnehmen. </p>
+            </div>
+        </div>
+        <div class="group-title">
+            <h4 style="margin-bottom:0;">Wünsche</h4>
+        </div>
+        <div class="content">
+            <div class="inner-align-center">
+                <p>In die Flitterwochen geht es nach Tokio und Palau. Wie freuen uns über eine kleine Spende zu unseren Flitterwochen
+                </p>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="footer">
+            <p>Man sieht oft etwas hundert Mal, tausend Mal, ehe man es zum allerersten Mal wirklich sieht.</br>- Christian
+                Morgenstern
+            </p>
+        </div>
+        <div class="content">
+            <h3>&hearts;</h3>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+
+                console.log($(window).scrollTop());
+
+                if ($(window).scrollTop() > 160) {
+                    $('#menue').addClass('menue-fixed');
+                }
+
+                if ($(window).scrollTop() < 161) {
+                    $('#menue').removeClass('menue-fixed');
+                }
+            });
+        });
+
+        function myFunction() {
+            var x = document.getElementById("menue");
+            if (x.id === "menue") {
+                x.id += " responsive";
+            } else {
+                x.id = "menue";
+            }
+        }
+    </script>
+
 </body>
+
 </html>
