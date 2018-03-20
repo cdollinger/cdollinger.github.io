@@ -21,6 +21,7 @@ p {
   color: rgb(103, 146,127);
 }
 
+
 b {
   font-family: 'Shadows Into Light', Arial, cursive;
   font-size: 27px;
@@ -54,6 +55,11 @@ a {
 }
 
 li a:hover {
+  color: rgb(255, 193, 160);
+  /*opacity: 0.7;*/
+}
+
+li a:active {
   color: rgb(255, 193, 160);
   /*opacity: 0.7;*/
 }
