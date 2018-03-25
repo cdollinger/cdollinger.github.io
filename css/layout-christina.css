@@ -133,6 +133,17 @@
     text-align: center;
 }
 
+.col3-span4
+{
+    grid-column: 3 /span 4;
+    padding-right: 30;
+}
+
+.col7-span4 {
+    grid-column: 7 /span 4;
+    padding-right: 30;
+}
+
 .from-3-span-two {
     grid-column: 4 /span 2;
     padding-left: 50;
@@ -235,7 +246,7 @@
 }
 
 .img-landscape {
-    max-height: 300;
+    max-height: 280;
 }
 
 .img-large {
