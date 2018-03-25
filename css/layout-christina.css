@@ -225,22 +225,21 @@
 
 .img-align-left {
     width: 400;
-    height: 500;
     overflow: hidden;
     text-align: left;
 }
 
 
-.con-img {
-    /* max-height: 400;
-    max-width: 400; */
-    max-width: 100%;
-    height: auto;
+.img-potrait {
+    max-height:400; 
+
 }
 
-.con-img-l {
-    /* max-height: 700;
-    max-width: 700; */
-    width: 100%;
+.img-landscape {
+    max-height: 300;
+}
+
+.img-large {
+    width: 80%;
 }
 
