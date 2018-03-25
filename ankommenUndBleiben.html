@@ -14,7 +14,7 @@
 
 <body>
     <!--[IF IE]> <p>Wenn du IE benutzt hast du die Kontrolle über dein Leben verloren </p> <![ENDIF]-->
-    <div class="con-twelve-col">
+    <div class="con-head">
         <div class="header">
             <div>
                 <img class="img-header" src="img/Header.png">
@@ -34,13 +34,15 @@
                 <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
             </ul>
         </div>
-        <div class="content">
+    </div>
+    <div class="con-twelve-col">
+        <div class="pad20">
         </div>
         <div class="group-title">
-            <h2>Ankommen</h2>
+            <h2 style="margin-bottom: 10;">Ankommen</h2>
         </div>
         <div class="group-title">
-            <h4>Hier wir sich getraut und gefeiert</h4>
+            <h4 style="margin-top: 0;">Hier wir sich getraut und gefeiert</h4>
         </div>
         <div class="content-span-six">
             <div class="inner-align-right">
@@ -52,20 +54,21 @@
         <div class="content-span-six">
             <img class="img-header" src="img/Anfahrt_Homepage.png">
         </div>
+        <div class="pad20"></div>
         <div class="content">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.8514579306516!2d11.003052897480229!3d49.68918903716187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f7da580cfbd9%3A0x20bd2fa61e279f3a!2sSchlo%C3%9Fstra%C3%9Fe+16%2C+91336+Heroldsbach!5e1!3m2!1sde!2sde!4v1521478904040"
                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        <div class="content"></div>
         <div class="space">
-            <img style="max-width: 50px;" src="img/Blume.png">
         </div>
         <div class="group-title">
-            <h2 style="margin-bottom:0;">Bleiben</h2>
+            <h2 style="margin-bottom:10;">Bleiben</h2>
         </div>
         <div class="group-title">
-            <h4>Übernachtungsmöglichkeiten</h4>
+            <h4 style="margin-top: 0;">Übernachtungsmöglichkeiten</h4>
         </div>
-        <div class="from-3-span-two">
+        <div class="col3">
             <p>
                 <b>Gasthof Frank</b>
                 </br>
@@ -75,23 +78,10 @@
                 <br> Ringstr. 18
                 <br> 91336 Heroldsbach
                 <br>
-                <a href="https://www.gasthof-frank.de">www.gasthof-frank.de</a>
+                <a href="http://www.gasthof-frank.de">www.gasthof-frank.de</a>
             </p>
         </div>
-        <div class="span-two">
-            <p>
-                <b>Hotel Bergblick</b>
-                </br>
-                09190/8440
-                <br> EZ ab 44,00 Euro
-                <br> DZ ab 64,00 Euro
-                <br> Burgleite 14
-                <br> 91336 Heroldsbach
-                <br>
-                <a href="https://www.hotel-bergblick.de">www.hotel-bergblick.de</a>
-            </p>
-        </div>
-        <div class="span-two">
+        <div class="col6">
             <p>
                 <b>Gasthof Lindenhof</b>
                 </br>
@@ -101,13 +91,30 @@
                 <br> Löffelholzweg 6
                 <br> 91336 Heroldsbach
                 <br>
-                <a href="https://www.lindenhof-heroldsbach.de">www.lindenhof-heroldsbach.de</a>
+                <a href="http://www.lindenhof-heroldsbach.de">www.lindenhof-heroldsbach.de</a>
+            </p>
+        </div>
+        <div class="col9">
+            <p>
+                <b>Hotel Bergblick</b>
+                </br>
+                09190/8440
+                <br> EZ ab 44,00 Euro
+                <br> DZ ab 64,00 Euro
+                <br> Burgleite 14
+                <br> 91336 Heroldsbach
+                <br>
+                <br>
             </p>
         </div>
         <div class="content">
-            <p>Am nächsten Morgen findet ein Brunch um 10 Uhr in der Sängerstube auf Schloss Thrun statt. Sagt uns einfach Bescheid,
-                ob ihr mit uns brunchen möchtet.
-            </p>
+            <div class="inner-align-center">
+                <p>Falls ihr übernachten möchtet und diese Unterkünfte bereits ausgebucht sind, gibt es noch mehr Hotels in
+                    der Umgebung. Wir helfen euch gerne bei der Suche. Und denkt dran, ihr seid am nächsten Morgen um 10
+                    Uhr zum Brunch in der Sängerstube auf Schloss Thrun herzlich eingeladen. Sagt uns einfach Bescheid, ob
+                    ihr kommt.
+                </p>
+            </div>
         </div>
         <div class="space"></div>
         <div class="footer">
@@ -156,11 +163,11 @@
             }
         }
 
-        $(document).ready(function() {
-	// get current URL path and assign 'active' class
-	var pathname = window.location.pathname;
-	$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
-})
+        $(document).ready(function () {
+            // get current URL path and assign 'active' class
+            var pathname = window.location.pathname;
+            $('.nav > li > a[href="' + pathname + '"]').parent().addClass('active');
+        })
     </script>
 
 </body>

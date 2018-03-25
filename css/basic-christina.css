@@ -54,6 +54,12 @@ a {
   }
 }
 
+p > a {
+  color: rgb(103, 146,127);
+  font-size: 18;
+  font-weight: 800;
+}
+
 li a:hover {
   color: rgb(255, 193, 160);
   /*opacity: 0.7;*/
