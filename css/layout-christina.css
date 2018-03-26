@@ -154,6 +154,15 @@
     text-align: center;
 }
 
+.inner-align-center-ie11 {
+    display: inline-flex;
+    font-size: 55 !important;
+    min-height: 100px;
+    padding-left: 120;
+    padding-right: 120;
+    text-align: center;
+}
+
 .inner-align-right {
     display: inline-flex;
     min-height: 100px;
