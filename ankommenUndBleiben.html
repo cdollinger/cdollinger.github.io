@@ -42,12 +42,13 @@
             <h2 style="margin-bottom: 10;">Ankommen</h2>
         </div>
         <div class="group-title">
-            <h4 style="margin-top: 0;">Hier wir sich getraut und gefeiert</h4>
+            <h4 style="margin-top: 0;">Hier wird sich getraut und gefeiert</h4>
         </div>
         <div class="content-span-six">
             <div class="inner-align-right">
-                <p style="text-align: right;"> Ins Navi: Schloßplatz 16, 91336 Heroldsbach eingeben. Gegenüber von dieser Adresse befindet sich der Privatparkplatz
-                    für euch.
+                <p style="text-align: right;"> Um zuverlässig ans Ziel zu kommen, gebt einfach die folgende Adresse in euer Navi ein:<br>
+                    Schloßplatz 16, 91336 Heroldsbach <br>
+                    Gegenüber von dieser Adresse befindet sich ein Privatparkplatz den ihr zu diesem Anlass benutzen könnt. 
                 </p>
             </div>
         </div>
@@ -130,6 +131,10 @@
     </div>
 
     <script>
+        if(navigator.userAgent.indexOf('MSIE')!==-1
+            || navigator.appVersion.indexOf('Trident/') > 0){
+                window.location = "sadIE11IsSad.html";
+        }
         $(document).ready(function () {
             $(window).scroll(function () {
 
