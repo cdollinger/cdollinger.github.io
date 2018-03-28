@@ -24,17 +24,13 @@
 
 
 .header {
-    height: 250px;
-    justify-content: center;
+    max-height: 320;
     grid-column: 1 / -1;
-    width: 100%;
     overflow: hidden;
-    background-color: rgb(127, 179, 155); 
 }
 
 .img-header {
-    max-width: 100%;
-    background-color: #fff;
+    width: 100%;
 }
 
 #menue {
@@ -74,7 +70,7 @@
         grid-column: 1 /-1 !important;
     }
 
-    .col3-span4 {
+    .headeran4 {
         grid-column: 1 /-1 !important;
     }
 
