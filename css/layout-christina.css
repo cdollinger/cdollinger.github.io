@@ -128,6 +128,46 @@
 
 .col1-span3 
 {
+    grid-column: 1 / span 3;
+    text-align: right; 
+}
+
+.col1-span3 p {
+    padding:15;
+}
+
+.col4-span3 
+{
+    grid-column: 4 / span 3; 
+    padding: 10; 
+    justify-content: center; 
+}
+
+.col4-span3 p {
+    padding:15;
+}
+
+.col7-span3 
+{
+    grid-column: 7 / span 3;  
+    padding: 10;
+    text-align: right;
+}
+
+.col7-span3 p {
+    padding:15;
+}
+
+.col10-span-toEnd {
+    grid-column: 10 / -1;
+}
+
+.col10-span-toEnd p {
+    padding:15;
+}
+
+.col2-span3 
+{
     grid-column: 2 / span 3;
     text-align: center;    
 }
@@ -151,6 +191,7 @@
 .col7-span4 {
     grid-column: 7 /span 4;
     padding-left: 20;
+    text-align: right;
 }
 
 .from-3-span-two {
@@ -260,7 +301,7 @@
 }
 
 .img-potrait {
-    max-height:400; 
+    width: 100% !important;
 
 }
 
