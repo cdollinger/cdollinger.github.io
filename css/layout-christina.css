@@ -13,8 +13,6 @@
     display: grid;
     margin-left: 25px;
     margin-right: 25px;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #fff;
 }
 
 .con-twelve-col > div {
@@ -36,15 +34,14 @@
 #menue {
     grid-column: 1 / -1;
     text-align: center;
-    padding-bottom: 8;
     background-color: rgb(127, 179, 155);
 }
 
 .menue-fixed {
     position: fixed;
     top: 0;
-    left: 45;
-    right: 45;
+    left: 0;
+    right: 0;
 }
 
 .icon {
@@ -88,6 +85,7 @@
 .content {
     grid-column: 1 / -1;
     justify-content: center;
+    text-align: center;
 }
 
 .content-span-six {
@@ -133,7 +131,7 @@
 }
 
 .col1-span3 p {
-    padding:15;
+    padding: 0 15;
 }
 
 .col4-span3 
@@ -225,8 +223,9 @@
 }
 
 .group-title {
-    justify-content: center;
     grid-column: 1 / -1;
+    justify-content: center;
+    text-align: center;
 }
 
 .group-title h2 {
