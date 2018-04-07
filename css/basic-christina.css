@@ -65,8 +65,8 @@ li a:active {
   /*opacity: 0.7;*/
 }
 
-.nav-smallscreen {
-
+iframe {
+  width: 100%;
 }
 
 /* Large desktop */
@@ -77,6 +77,13 @@ li a:active {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {  }
+
+@media (max-width: 767px) {  
+
+  a {
+    font-size: 24;
+  }
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
@@ -200,6 +207,9 @@ li a:active {
     padding: 0 !important;
   }
 
+  iframe {
+    max-height: 300;
+  }
 
  }
 
