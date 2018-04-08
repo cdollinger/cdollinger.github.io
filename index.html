@@ -42,7 +42,7 @@
         </div>
         <div class="pad20">
         </div>
-        <div class="content">
+        <div id="pic-con">
             <img id="img-110Perc" src="img/Tagesablauf_Homepage.png">
         </div>
         <div class="pad20"></div>
@@ -84,37 +84,6 @@
             <h3>&hearts;</h3>
         </div>
     </div>
-
-    <script>
-        if (navigator.userAgent.indexOf('MSIE') !== -1
-            || navigator.appVersion.indexOf('Trident/') > 0) {
-            window.location = "sadIE11IsSad.html";
-        }
-        $(document).ready(function () {
-            $(window).scroll(function () {
-
-                console.log($(window).scrollTop());
-
-                if ($(window).scrollTop() > 160) {
-                    $('#menue').addClass('menue-fixed');
-                }
-
-                if ($(window).scrollTop() < 161) {
-                    $('#menue').removeClass('menue-fixed');
-                }
-            });
-        });
-
-        function myFunction() {
-            var x = document.getElementById("menue");
-            if (x.id === "menue") {
-                x.id += " responsive";
-            } else {
-                x.id = "menue";
-            }
-        }
-    </script>
-
+    <script src="basicFunctions.js"></script>
 </body>
-
 </html>
