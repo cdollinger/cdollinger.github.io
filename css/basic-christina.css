@@ -65,6 +65,16 @@ li a:active {
   /*opacity: 0.7;*/
 }
 
+p a:hover {
+  color: rgb(255, 193, 160);
+  /*opacity: 0.7;*/
+}
+
+p a:active {
+  color: rgb(255, 193, 160);
+  /*opacity: 0.7;*/
+}
+
 iframe {
   width: 100%;
 }
@@ -119,8 +129,6 @@ iframe {
     font-size: 16 !important;
   }
 
-  
-
   .align-right {
     text-align: center !important;
   }
@@ -164,8 +172,6 @@ iframe {
     text-align: left !important;
   }
 
-
-
   iframe {
     max-height: 300;
   }
@@ -184,7 +190,7 @@ iframe {
     padding: 0 !important;
   }
   
-  .col7-span4, .col3-span4  {
+  .col7-span4, .col3-span4, .col3-span8 {
       grid-column: 1 /-1 !important;
       padding: 0 !important;
   }
@@ -227,6 +233,10 @@ iframe {
   .img-landscape {
       padding-bottom: 10;
   }
+  
+  .img-potrait {
+    padding-bottom: 10;
+}
 
   .content {
       padding: 0 !important;

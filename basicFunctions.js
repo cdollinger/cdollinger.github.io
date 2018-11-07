@@ -4,8 +4,6 @@ window.location = "sadIE11IsSad.html";
 }
 $(document).ready(function () {
 $(window).scroll(function () {
-    console.log($(window).scrollTop());
-
     if ($(window).scrollTop() > 280) {
         $('#menue').addClass('menue-fixed');
     }

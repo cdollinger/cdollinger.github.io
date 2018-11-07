@@ -125,9 +125,31 @@
     padding: 0 15;
 }
 
+.col3-span4 
+{
+    grid-column: 3 / span 4; 
+    padding: 10; 
+    justify-content: center; 
+}
+
+.col3-span8
+{
+    grid-column: 3 / span 8; 
+    padding: 10; 
+    justify-content: center; 
+}
+
 .col4-span3 
 {
     grid-column: 4 / span 3; 
+    padding: 10; 
+    justify-content: center; 
+}
+
+
+.col4-span6
+{
+    grid-column: 4 / span 6; 
     padding: 10; 
     justify-content: center; 
 }
@@ -139,6 +161,13 @@
 .col7-span3 
 {
     grid-column: 7 / span 3;  
+    padding: 10;
+    text-align: right;
+}
+
+.col7-span4
+{
+    grid-column: 7 / span 4;  
     padding: 10;
     text-align: right;
 }
@@ -302,5 +331,24 @@
 .img-large {
     width: 80%;
     max-height: 900;
+}
+
+.img-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: max-content;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
